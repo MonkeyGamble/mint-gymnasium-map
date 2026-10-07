@@ -6,36 +6,37 @@
   <meta name="theme-color" content="#101d2c">
   <meta name="description" content="Интерактивная карта MINT-гимназий Nordrhein-Westfalen и школ MINT-EC Rheinland-Pfalz.">
   <title>MINT-гимназии NRW и Rheinland-Pfalz — карта</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=3">
 </head>
 <body>
   <div class="app">
     <header class="topbar">
       <div class="brand"><span class="brand-icon" aria-hidden="true">✳</span><div><strong>MINT-ГИМНАЗИИ</strong><span>Nordrhein-Westfalen · 2026</span></div></div>
-      <div class="topbar-right"><span id="source-date" class="date">Данные schulen.de · 24.09.2026</span><a id="source-link" class="source-link" href="https://schulen.de/toplisten/beste-oeffentliche-schulen-nordrhein-westfalen-min/" target="_blank" rel="noopener noreferrer">Исходный рейтинг ↗</a></div>
+      <div class="topbar-right"><span id="source-date" class="date">Сверено · 07.10.2026</span><a id="source-link" class="source-link" href="https://schulen.de/toplisten/beste-schulen-nordrhein-westfalen-mint/" target="_blank" rel="noopener noreferrer">MINT-рейтинг ↗</a></div>
     </header>
     <main class="workspace">
       <aside class="sidebar">
-        <div class="intro"><div class="eyebrow">ИНТЕРАКТИВНЫЙ АТЛАС</div><h1 id="heading">100 гимназий<br>на карте NRW<span>.</span></h1><p id="summary">Первые 100 гимназий по MINT в общем рейтинге государственных школ. Gesamtschulen исключены.</p></div>
+        <div class="intro"><div class="eyebrow">ИНТЕРАКТИВНЫЙ АТЛАС</div><h1 id="heading">Гимназии<br>на карте NRW<span>.</span></h1><p id="summary">Исходная подборка и гимназии сети MINT-EC до 300-го места в рейтинге своей земли.</p></div>
         <div class="controls">
           <label class="region-wrap">Федеральная земля<select id="region"><option value="nrw">Nordrhein-Westfalen</option><option value="rp">Rheinland-Pfalz</option></select></label>
           <label class="searchbox"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Школа, город или индекс" autocomplete="off" aria-label="Поиск гимназии"></label>
           <div class="filterrow"><label class="select-wrap">Город<select id="city"><option value="">Все города</option></select></label><button id="reset" class="reset" type="button">Сбросить</button></div>
-          <div class="list-meta"><strong id="count">Загрузка…</strong><span id="list-label">место в рейтинге schulen.de</span></div>
+          <label class="mint-toggle"><input id="mint-only" type="checkbox"> Только MINT-EC</label>
+          <div class="list-meta"><strong id="count">Загрузка…</strong><span id="list-label">MINT-место в своей земле</span></div>
         </div>
         <div id="results" class="results" role="list" aria-label="Гимназии"></div>
-        <div class="sidebar-foot"><span id="source-note">Рейтинг отражает предложения школ по MINT, а не качество обучения или результаты учеников.</span> <a id="source-foot-link" href="https://schulen.de/toplisten/beste-oeffentliche-schulen-nordrhein-westfalen-min/" target="_blank" rel="noopener noreferrer">Методика ↗</a></div>
+        <div class="sidebar-foot"><span id="source-note">Рейтинг отражает предложения школ по MINT, а не качество обучения или результаты учеников.</span> <a id="source-foot-link" href="https://schulen.de/toplisten/beste-schulen-nordrhein-westfalen-mint/" target="_blank" rel="noopener noreferrer">Методика ↗</a></div>
       </aside>
       <section class="map-panel" aria-label="Карта Google Maps">
         <div id="map" class="map" aria-label="Карта гимназий"></div>
         <iframe id="embed" class="map-embed" title="Выбранная гимназия на Google Maps" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
         <div class="map-upper"><span class="map-badge"><i></i> GOOGLE MAPS</span><span id="map-state" class="map-state">Карта выбранной гимназии</span></div>
-        <div id="setup" class="setup hidden"><div class="setup-head"><span class="setup-icon">◎</span><div><strong id="setup-heading">Показать все 100 отметок</strong><p>Для общей карты Google Maps нужен ключ Maps JavaScript API.</p></div><button id="setup-close" type="button" aria-label="Скрыть подсказку">×</button></div><form id="key-form"><label for="api-key">Ваш API-ключ Google Maps</label><div class="key-row"><input id="api-key" type="password" placeholder="Вставьте API-ключ" autocomplete="off"><button type="submit">Подключить</button></div><small>Введите ключ один раз: он сохранится в этом браузере и будет подключаться автоматически. Ограничьте ключ доменом сайта.</small><span id="key-error" role="alert"></span></form></div>
-        <div id="selection" class="selection" hidden><div class="selection-overline">ВЫБРАННАЯ ГИМНАЗИЯ <button id="selection-close" type="button" aria-label="Закрыть карточку">×</button></div><div class="selection-main"><span id="selection-rank"></span><div><h2 id="selection-name"></h2><p id="selection-address"></p></div></div><div class="official-site"><small>ОФИЦИАЛЬНЫЙ САЙТ</small><a id="selection-official" target="_blank" rel="noopener noreferrer"></a></div><div class="selection-links"><a id="selection-profile" target="_blank" rel="noopener noreferrer">Профиль школы ↗</a><a id="selection-map" target="_blank" rel="noopener noreferrer">Открыть в Google Maps ↗</a></div></div>
+        <div id="setup" class="setup hidden"><div class="setup-head"><span class="setup-icon">◎</span><div><strong id="setup-heading">Показать все отметки</strong><p>Для общей карты Google Maps нужен ключ Maps JavaScript API.</p></div><button id="setup-close" type="button" aria-label="Скрыть подсказку">×</button></div><form id="key-form"><label for="api-key">Ваш API-ключ Google Maps</label><div class="key-row"><input id="api-key" type="password" placeholder="Вставьте API-ключ" autocomplete="off"><button type="submit">Подключить</button></div><small>Введите ключ один раз: он сохранится в этом браузере и будет подключаться автоматически. Ограничьте ключ доменом сайта.</small><span id="key-error" role="alert"></span></form></div>
+        <div id="selection" class="selection" hidden><div class="selection-overline">ВЫБРАННАЯ ГИМНАЗИЯ <button id="selection-close" type="button" aria-label="Закрыть карточку">×</button></div><div class="selection-main"><span id="selection-rank"></span><div><h2 id="selection-name"></h2><p id="selection-address"></p><p id="selection-status" class="selection-status"></p></div></div><div class="official-site"><small>ОФИЦИАЛЬНЫЙ САЙТ</small><a id="selection-official" target="_blank" rel="noopener noreferrer"></a></div><div class="selection-links"><a id="selection-profile" target="_blank" rel="noopener noreferrer">Профиль школы ↗</a><a id="selection-network" target="_blank" rel="noopener noreferrer" hidden>В сети MINT-EC ↗</a><a id="selection-map" target="_blank" rel="noopener noreferrer">Открыть в Google Maps ↗</a></div></div>
       </section>
     </main>
   </div>
   <script src="./maps-config.js?v=2" defer></script>
-  <script src="./app.js?v=2" defer></script>
+  <script src="./app.js?v=3" defer></script>
 </body>
 </html>

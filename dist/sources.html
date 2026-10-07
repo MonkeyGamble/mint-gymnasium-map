@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Источники и отбор гимназий — MINT-карта</title>
+  <style>
+    body{max-width:800px;margin:40px auto;padding:0 22px;font:16px/1.65 system-ui,sans-serif;color:#14263b;background:#fbfcfa}h1{line-height:1.2}a{color:#23755e}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{text-align:left;padding:10px;border-bottom:1px solid #d5dfe1}small{color:#607085}
+  </style>
+</head>
+<body>
+  <a href="./">← Вернуться к карте</a>
+  <h1>Источники и отбор гимназий</h1>
+  <p>Данные сверены <strong>7 октября 2026 года</strong>. Членство в MINT-EC и место в рейтинге schulen.de проверяются отдельно.</p>
+  <table><thead><tr><th>Земля</th><th>Всего на карте</th><th>Из них MINT-EC</th></tr></thead><tbody><tr><td>Nordrhein-Westfalen</td><td>138</td><td>96</td></tr><tr><td>Rheinland-Pfalz</td><td>21</td><td>21</td></tr></tbody></table>
+  <h2>Как отбирались школы</h2>
+  <p>Сохранены исходные 100 гимназий NRW и 21 гимназия Rheinland-Pfalz. Добавлены ещё 38 гимназий NRW, которые одновременно входят в официальную сеть MINT-EC и занимают места с 1-го по 300-е включительно в MINT-рейтинге своей земли.</p>
+  <p>Используется общий рейтинг государственных и частных школ каждой земли. Номер на маркере — исходное место на schulen.de среди всех типов школ, а не место только среди гимназий или только среди участников MINT-EC. Поэтому в нумерации есть пропуски и возможны одинаковые места. Для Rheinland-Pfalz прежняя порядковая нумерация заменена местами в рейтинге.</p>
+  <p>Gesamtschulen не добавляются. Уже присутствовавший Ausonius-Gymnasium Kirchberg сохранён как самостоятельный гимназический филиал KGS; его Realschule и общий школьный комплекс отдельно на карту не добавлены. <a href="https://kgs-kirchberg.de/" target="_blank" rel="noopener noreferrer">Структура школы ↗</a></p>
+  <p>Переключатель «Только MINT-EC» оставляет школы с подтверждённым членством. В исходной сотне NRW есть и гимназии без подтверждённого членства в каталоге MINT-EC.</p>
+  <h2>Источники</h2>
+  <ul>
+    <li><a href="https://netzwerkkarte.mint-ec.de/" target="_blank" rel="noopener noreferrer">Официальная карта сети MINT-EC</a> — членство, идентификаторы и координаты добавленных школ.</li>
+    <li><a href="https://schulen.de/toplisten/beste-schulen-nordrhein-westfalen-mint/" target="_blank" rel="noopener noreferrer">MINT-рейтинг Nordrhein-Westfalen</a>.</li>
+    <li><a href="https://schulen.de/toplisten/beste-schulen-rheinland-pfalz-mint/" target="_blank" rel="noopener noreferrer">MINT-рейтинг Rheinland-Pfalz</a>.</li>
+    <li>Профили schulen.de и сайты гимназий — адреса, тип школы и официальные веб-страницы. Ссылки доступны в карточках.</li>
+    <li><a href="./data-sources.json">Полная проверка отбора в JSON</a> — все 132 записи MINT-EC двух земель, включённые и исключённые школы с причинами.</li>
+  </ul>
+  <h2>Ограничения</h2>
+  <p>Рейтинг schulen.de оценивает опубликованные предложения школы, а не качество преподавания, результаты Abitur или отзывы родителей. Школьные профили и членство могут меняться; карта представляет снимок данных.</p>
+  <p><strong>Max-Planck-Gymnasium Düsseldorf:</strong> членство в MINT-EC подтверждено, но schulen.de ошибочно относит школу к Baden-Württemberg. Достоверного места в рейтинге NRW нет, поэтому школа не включена в подборку с ограничением до 300-го места. Чужой региональный рейтинг не использован вместо NRW.</p>
+</body>
+</html>

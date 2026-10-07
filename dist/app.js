@@ -19,19 +19,23 @@ const mapsLink = (school) => `https://www.google.com/maps/search/?api=1&query=${
 const fold = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 function cityOf(address) { return address.match(/\b\d{5}\s+(.+)$/)?.[1] || address.split(',').at(-1).trim(); }
 const regionSchools = () => state.schools.filter(s => s.region === state.region);
-const schoolLabel = (school) => school.region === 'rp' ? `MINT-EC · ${school.name}` : `№ ${school.rank} · ${school.name}`;
+const schoolLabel = (school) => `№ ${school.rank}${school.mint_ec ? ' · MINT-EC' : ''} · ${school.name}`;
 function updateRegionContent() {
   const rp = state.region === 'rp';
-  const source = rp ? 'https://netzwerkkarte.mint-ec.de/' : 'https://schulen.de/toplisten/beste-oeffentliche-schulen-nordrhein-westfalen-min/';
+  const schools = regionSchools();
+  const mintCount = schools.filter(s => s.mint_ec).length;
+  const source = rp ? 'https://schulen.de/toplisten/beste-schulen-rheinland-pfalz-mint/' : 'https://schulen.de/toplisten/beste-schulen-nordrhein-westfalen-mint/';
   document.querySelector('.brand span:last-child').textContent = rp ? 'Rheinland-Pfalz · 2026' : 'Nordrhein-Westfalen · 2026';
-  $('source-date').textContent = rp ? 'Сеть MINT-EC · 25.09.2026' : 'Данные schulen.de · 24.09.2026';
-  $('source-link').href = source; $('source-link').textContent = rp ? 'Список MINT-EC ↗' : 'Исходный рейтинг ↗';
-  $('heading').innerHTML = rp ? '21 гимназия<br>MINT-EC в RLP<span>.</span>' : '100 гимназий<br>на карте NRW<span>.</span>';
-  $('summary').textContent = rp ? 'Гимназии Rheinland-Pfalz, входящие в официальную сеть MINT-EC. Список без ранжирования.' : 'Первые 100 гимназий по MINT в общем рейтинге государственных школ. Gesamtschulen исключены.';
-  $('list-label').textContent = rp ? 'номер на карте · не рейтинг' : 'место в рейтинге schulen.de';
-  $('source-note').textContent = rp ? 'По данным официальной карты сети MINT-EC. Порядок школ не означает оценку качества.' : 'Рейтинг отражает предложения школ по MINT, а не качество обучения или результаты учеников.';
-  $('source-foot-link').href = source; $('source-foot-link').textContent = rp ? 'Карта сети ↗' : 'Методика ↗';
-  $('setup-heading').textContent = rp ? 'Показать все 21 отметку' : 'Показать все 100 отметок';
+  $('source-date').textContent = 'Сверено · 07.10.2026';
+  $('source-link').href = source; $('source-link').textContent = 'MINT-рейтинг ↗';
+  $('heading').innerHTML = rp ? 'Гимназии MINT-EC<br>на карте RLP<span>.</span>' : 'Гимназии<br>на карте NRW<span>.</span>';
+  $('summary').textContent = rp
+    ? `${schools.length} гимназия MINT-EC. Все входят в первые 300 позиций MINT-рейтинга своей земли.`
+    : `Исходная сотня и гимназии MINT-EC до 300-го места: всего ${schools.length}, из них ${mintCount} — MINT-EC.`;
+  $('list-label').textContent = 'MINT-место в своей земле';
+  $('source-note').textContent = 'Номер — место среди всех школ своей земли на schulen.de. Рейтинг оценивает предложения школ, а не качество обучения. MINT-EC — отдельный статус.';
+  $('source-foot-link').href = './sources.html'; $('source-foot-link').textContent = 'Источники и отбор ↗';
+  $('setup-heading').textContent = `Показать все отметки (${schools.length})`;
   $('map-state').textContent = state.map ? `${state.filtered.length} отметок · наведите или нажмите` : 'Карта выбранной гимназии';
 }
 function renderCities() {
@@ -42,20 +46,22 @@ function renderCities() {
 function renderList(shouldFit=true) {
   const query = fold($('search').value.trim()); const city = $('city').value;
   const all = regionSchools();
-  state.filtered = all.filter(s => (!city || cityOf(s.address) === city) && (!query || fold(`${s.name} ${s.address}`).includes(query)));
+  state.filtered = all.filter(s => (!$('mint-only').checked || s.mint_ec) && (!city || cityOf(s.address) === city) && (!query || fold(`${s.name} ${s.address}`).includes(query)));
   $('count').textContent = `${state.filtered.length} из ${all.length} гимназий`;
   if (state.map) $('map-state').textContent = `${state.filtered.length} отметок · наведите или нажмите`;
   const fragment = document.createDocumentFragment();
   for (const school of state.filtered) {
     const button = document.createElement('button');
-    button.type='button'; button.className=`result${school.region === 'nrw' && school.rank <= 20 ? ' top' : ''}${state.selected === school ? ' active' : ''}`;
-    button.dataset.rank=school.rank;
-    button.setAttribute('role','listitem'); button.setAttribute('aria-label',school.region === 'rp' ? `MINT-EC, ${school.name}, ${school.address}` : `${school.rank} место, ${school.name}, ${school.address}`);
+    button.type='button'; button.className=`result${school.rank <= 20 ? ' top' : ''}${state.selected === school ? ' active' : ''}`;
+    button.dataset.schoolId=school.id;
+    button.setAttribute('role','listitem'); button.setAttribute('aria-label',`${schoolLabel(school)}, ${school.address}`);
     const rank=document.createElement('span'); rank.className='rank'; rank.textContent=school.rank;
     const details=document.createElement('span'); details.className='result-text';
     const title=document.createElement('span'); title.className='result-title'; title.textContent=school.name;
     const place=document.createElement('span'); place.className='result-location'; place.textContent=school.address;
-    details.append(title,place); const arrow=document.createElement('span'); arrow.className='result-chevron'; arrow.textContent='›';
+    details.append(title,place);
+    if (school.mint_ec) { const badge=document.createElement('span'); badge.className='mint-badge'; badge.textContent='MINT-EC'; details.append(badge); }
+    const arrow=document.createElement('span'); arrow.className='result-chevron'; arrow.textContent='›';
     button.append(rank,details,arrow);
     button.addEventListener('mouseenter',()=>previewSchool(school));
     button.addEventListener('mouseleave',()=>clearPreview(school));
@@ -68,10 +74,13 @@ function renderList(shouldFit=true) {
   updateMarkers(shouldFit);
 }
 function selectSchool(school, scroll=false) {
-  state.selected=school; state.hovered=null; $('selection').hidden=false; $('selection-rank').textContent=school.region === 'rp' ? 'MINT-EC' : `№ ${school.rank}`;
+  state.selected=school; state.hovered=null; $('selection').hidden=false; $('selection-rank').textContent=`№ ${school.rank}`;
   $('selection-name').textContent=school.name; $('selection-address').textContent=school.address;
+  $('selection-status').textContent = `${school.mint_ec ? 'MINT-EC · ' : ''}MINT-рейтинг ${school.region === 'nrw' ? 'NRW' : 'Rheinland-Pfalz'}${school.school_form_note ? ' · ' + school.school_form_note : ''}`;
   $('selection-official').href=school.official_url; $('selection-official').textContent=school.official_url;
   $('selection-profile').href=school.url; $('selection-map').href=mapsLink(school);
+  $('selection-network').hidden=!school.mint_ec;
+  if(school.mint_ec) $('selection-network').href=school.mint_ec_url;
   if (state.map) { refreshHighlights(); showMarkerInfo(school); }
   else $('embed').src=`https://maps.google.com/maps?q=${encodeURIComponent(`${school.lat},${school.lng}`)}&z=13&output=embed`;
   renderList(false); if (scroll) document.querySelector('.result.active')?.scrollIntoView({block:'nearest'});
@@ -95,7 +104,7 @@ function refreshHighlights() {
     marker.setLabel({text:String(school.rank),color:active?'#fff':'#153e35',fontSize:active?'12px':'10px',fontWeight:'700'});
     marker.setZIndex(active?1000:school.region === 'nrw' && school.rank<=20?100:1);
   }
-  document.querySelectorAll('.result').forEach(row=>row.classList.toggle('hovered',state.hovered?.region === state.region && Number(row.dataset.rank)===state.hovered?.rank));
+  document.querySelectorAll('.result').forEach(row=>row.classList.toggle('hovered',row.dataset.schoolId===state.hovered?.id));
 }
 function showMarkerInfo(school) {
   if(!state.map)return;
@@ -103,7 +112,7 @@ function showMarkerInfo(school) {
   if(!entry)return;
   if(!state.info)state.info=new google.maps.InfoWindow({disableAutoPan:true});
   const content=document.createElement('div');content.className='marker-info';
-  const rank=document.createElement('strong');rank.textContent=school.region === 'rp' ? 'MINT-EC' : `№ ${school.rank}`;
+  const rank=document.createElement('strong');rank.textContent=`№ ${school.rank} · ${school.region === 'nrw' ? 'NRW' : 'RLP'}${school.mint_ec ? ' · MINT-EC' : ''}`;
   const name=document.createElement('span');name.textContent=school.name;
   const official=document.createElement('a');official.href=school.official_url;
   official.target='_blank';official.rel='noopener noreferrer';official.textContent=school.official_url;
@@ -136,10 +145,12 @@ function loadKey(key) {
 }
 $('key-form').addEventListener('submit',e=>{e.preventDefault();const key=$('api-key').value.trim();if(!key){$('key-error').textContent='Введите API-ключ.';return;}if(document.querySelector('script[data-google-maps]')){rememberKey(key);location.reload();return;}loadKey(key);});
 $('setup-close').addEventListener('click',()=>$('setup').classList.add('hidden'));
-$('selection-close').addEventListener('click',()=>{$('selection').hidden=true;state.selected=null;renderList();});
-$('search').addEventListener('input',()=>{state.selected=null;$('selection').hidden=true;renderList();});
-$('city').addEventListener('change',()=>{state.selected=null;$('selection').hidden=true;renderList();});
-$('reset').addEventListener('click',()=>{$('search').value='';$('city').value='';state.selected=null;$('selection').hidden=true;renderList();});
+function clearSelection() { state.selected=null;state.hovered=null;state.info?.close();$('selection').hidden=true;refreshHighlights(); }
+$('selection-close').addEventListener('click',()=>{clearSelection();renderList(false);});
+$('search').addEventListener('input',()=>{clearSelection();renderList();});
+$('city').addEventListener('change',()=>{clearSelection();renderList();});
+$('mint-only').addEventListener('change',()=>{clearSelection();renderList();});
+$('reset').addEventListener('click',()=>{$('search').value='';$('city').value='';$('mint-only').checked=false;clearSelection();renderList();});
 $('region').addEventListener('change',()=>{
   state.region=$('region').value; state.selected=null; state.hovered=null; state.info?.close();
   $('selection').hidden=true; $('search').value=''; renderCities(); updateRegionContent(); renderList();

@@ -1,0 +1,1223 @@
+{
+  "checked_at": "2026-10-07",
+  "rank_limit": 300,
+  "rank_category": "MINT",
+  "rank_scope": "All ranked schools within each federal state (public and private); rank is not a MINT-EC-only ranking.",
+  "ranking_sources": {
+    "nrw": "https://schulen.de/toplisten/beste-schulen-nordrhein-westfalen-mint/",
+    "rp": "https://schulen.de/toplisten/beste-schulen-rheinland-pfalz-mint/"
+  },
+  "membership_source": "https://netzwerkkarte.mint-ec.de/",
+  "membership_api": "https://netzwerkkarte.mint-ec.de/wp-json/wp/v2/participants",
+  "policy": "Preserve the original 100 NRW Gymnasien and 21 RLP Gymnasien. Add verified MINT-EC Gymnasien with a regional MINT rank of 1–300; exclude integrated Gesamtschulen. Retain the autonomous Ausonius-Gymnasium branch.",
+  "counts": {
+    "nrw": {
+      "total": 138,
+      "mint_ec": 96,
+      "added": 38
+    },
+    "rp": {
+      "total": 21,
+      "mint_ec": 21,
+      "added": 0
+    }
+  },
+  "limitations": [
+    "Membership is checked against the official network map snapshot; it may change.",
+    "schulen.de ranks published school offerings, not teaching quality or examination results.",
+    "The NRW rank of Max-Planck-Gymnasium Düsseldorf is unverified because schulen.de assigns the school to the wrong federal state."
+  ],
+  "membership_review": [
+    {
+      "mint_ec_id": 4999,
+      "name": "Albert-Schweitzer-/Geschwister-Scholl-Gymnasium Marl",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/albert-schweitzer-geschwister-scholl-gymnasium/",
+      "rank": 121,
+      "ranking_profile": "https://schulen.de/schulen/albert-schweitzer-geschwister-scholl-gymnasium-marl-10132/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3636,
+      "name": "Albert-Schweitzer-Gymnasium Hürth",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/albert-schweitzer-gymnasium-huerth/",
+      "rank": 3,
+      "ranking_profile": "https://schulen.de/schulen/albert-schweitzer-gymnasium-huerth-10297/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5002,
+      "name": "Alexander-von-Humboldt-Gymnasium Bornheim",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/alexander-von-humboldt-gymnasium/",
+      "rank": 168,
+      "ranking_profile": "https://schulen.de/schulen/alexander-von-humboldt-gymnasium-bornheim-9751/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5006,
+      "name": "Andreas-Vesalius-Gymnasium Wesel",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/andreas-vesalius-gymnasium/",
+      "rank": 140,
+      "ranking_profile": "https://schulen.de/schulen/andreas-vesalius-gymnasium-wesel-10215/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3966,
+      "name": "Anne-Frank-Gymnasium Werne",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/anne-frank-gymnasium-werne/",
+      "rank": 549,
+      "ranking_profile": "https://schulen.de/schulen/anne-frank-gymnasium-werne-9946/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3939,
+      "name": "Annette-von-Droste-Hülshoff-Gymnasium Dülmen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/annette-von-droste-huelshoff-gymnasium-duelmen/",
+      "rank": 97,
+      "ranking_profile": "https://schulen.de/schulen/annette-von-droste-huelshoff-gymnasium-duelmen-9917/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3643,
+      "name": "Annette-von-Droste-Hülshoff-Gymnasium Münster",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/annette-von-droste-huelshoff-gymnasium-muenster/",
+      "rank": 364,
+      "ranking_profile": "https://schulen.de/schulen/annette-von-droste-huelshoff-gymnasium-muenster-9958/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3963,
+      "name": "Anno-Gymnasium Siegburg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/anno-gymnasium-siegburg/",
+      "rank": 157,
+      "ranking_profile": "https://schulen.de/schulen/staedtisches-anno-gymnasium-siegburg-10365/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3968,
+      "name": "Bischöfliche Clara-Fey-Schule Schleiden",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/bischoefliche-clara-fey-schule-schleiden/",
+      "rank": 220,
+      "ranking_profile": "https://schulen.de/schulen/clara-fey-gymnasium-schleiden-10123/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3649,
+      "name": "Bischöfliche Marienschule Mönchengladbach",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/bischoefliche-marienschule-moenchengladbach/",
+      "rank": 142,
+      "ranking_profile": "https://schulen.de/schulen/bischoefliche-marienschule-moenchengladbach-10322/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3934,
+      "name": "Bischöfliches Pius-Gymnasium Aachen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/bischoefliches-pius-gymnasium-aachen/",
+      "rank": 143,
+      "ranking_profile": "https://schulen.de/schulen/bischoefliches-pius-gymnasium-aachen-9902/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3901,
+      "name": "CJD Christophorusschule Königswinter",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/cjd-christophorusschule-koenigswinter/",
+      "rank": 23,
+      "ranking_profile": "https://schulen.de/schulen/cjd-christophorusschule-koenigswinter-9862/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3653,
+      "name": "Carl-Fuhlrott-Gymnasium Wuppertal",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/carl-fuhlrott-gymnasium/",
+      "rank": 51,
+      "ranking_profile": "https://schulen.de/schulen/staedt-carl-fuhlrott-gymnasium-wuppertal-10038/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5014,
+      "name": "Ceciliengymnasium Bielefeld",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ceciliengymnasium/",
+      "rank": 12,
+      "ranking_profile": "https://schulen.de/schulen/staedt-cecilien-gymnasium-bielefeld-10152/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5017,
+      "name": "Couven-Gymnasium Aachen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/couven-gymnasium/",
+      "rank": 61,
+      "ranking_profile": "https://schulen.de/schulen/staedt-couven-gymnasium-aachen-10119/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5021,
+      "name": "Einhard-Gymnasium Aachen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/einhard-gymnasium/",
+      "rank": 99,
+      "ranking_profile": "https://schulen.de/schulen/staedt-einhard-gymnasium-aachen-10218/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5023,
+      "name": "Engelbert-Kaempfer-Gymnasium Lemgo",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/engelbert-kaempfer-gymnasium/",
+      "rank": 43,
+      "ranking_profile": "https://schulen.de/schulen/engelbert-kaempfer-gymnasium-lemgo-10196/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5027,
+      "name": "Ernst-Moritz-Arndt-Gymnasium Bonn",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ernst-moritz-arndt-gymnasium/",
+      "rank": 57,
+      "ranking_profile": "https://schulen.de/schulen/ernst-moritz-arndt-gymnasium-der-stadt-bonn-9896/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3772,
+      "name": "Erzbischöfliches Irmgardis-Gymnasium Köln",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/erzbischoefliches-irmgardis-gymnasium/",
+      "rank": 237,
+      "ranking_profile": "https://schulen.de/schulen/erzbischoefliches-irmgardis-gymnasium-koeln-10238/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3915,
+      "name": "Erzbischöfliches Ursulinengymnasium Köln",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/erzbischoefliches-ursulinengymnasium-koeln/",
+      "rank": 65,
+      "ranking_profile": "https://schulen.de/schulen/erzbischoefliches-ursulinengymnasium-koeln-10121/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3919,
+      "name": "Europagymnasium Kerpen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/europagymnasium-kerpen/",
+      "rank": 312,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-der-stadt-kerpen-10187/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 5029,
+      "name": "Europaschule Bornheim",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/europaschule-bornheim/",
+      "rank": 34,
+      "ranking_profile": "https://schulen.de/schulen/europaschule-bornheim-13561/",
+      "status": "excluded_gesamtschule"
+    },
+    {
+      "mint_ec_id": 3679,
+      "name": "Evangelisch Stiftisches Gymnasium Gütersloh",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/evangelisch-stiftisches-gymnasium/",
+      "rank": 79,
+      "ranking_profile": "https://schulen.de/schulen/evangelisch-stiftisches-gymnasium-guetersloh-9904/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3946,
+      "name": "Evangelisches Gymnasium Lippstadt",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/evangelisches-gymnasium-lippstadt/",
+      "rank": 174,
+      "ranking_profile": "https://schulen.de/schulen/evangelisches-gymnasium-lippstadt-9814/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5032,
+      "name": "Fichte-Gymnasium Hagen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/fichte-gymnasium/",
+      "rank": 597,
+      "ranking_profile": "https://schulen.de/schulen/fichte-gymnasium-hagen-9947/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 5033,
+      "name": "Franz-Stock-Gymnasium Arnsberg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/franz-stock-gymnasium-arnsberg/",
+      "rank": 100,
+      "ranking_profile": "https://schulen.de/schulen/franz-stock-gymnasium-arnsberg-9820/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3685,
+      "name": "Freiherr-vom-Stein-Gymnasium Hamm",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/freiherr-vom-stein-gymnasium/",
+      "rank": 88,
+      "ranking_profile": "https://schulen.de/schulen/freiherr-vom-stein-gymnasium-hamm-10048/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 7578,
+      "name": "Friedrich-Albert-Lange-Schule Solingen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/friedrich-albert-lange-schule-solingen/",
+      "rank": 430,
+      "ranking_profile": "https://schulen.de/schulen/friedrich-albert-lange-schule-solingen-13538/",
+      "status": "excluded_gesamtschule"
+    },
+    {
+      "mint_ec_id": 3945,
+      "name": "Friedrich-Harkort-Schule Herdecke",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/friedrich-harkort-schule/",
+      "rank": 15,
+      "ranking_profile": "https://schulen.de/schulen/friedrich-harkort-schule-herdecke-9993/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3961,
+      "name": "Friedrich-Wilhelm-Gymnasium Köln",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/friedrich-wilhelm-gymnasium/",
+      "rank": 286,
+      "ranking_profile": "https://schulen.de/schulen/friedrich-wilhelm-gymnasium-koeln-10271/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 8275,
+      "name": "Goethe-Gymnasium Stolberg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/goethe-gymnasium-stolberg/",
+      "rank": 373,
+      "ranking_profile": "https://schulen.de/schulen/staedt-goethe-gymnasium-stolberg-rhld-10097/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3702,
+      "name": "Graf-Adolf-Gymnasium Tecklenburg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/graf-adolf-gymnasium/",
+      "rank": 106,
+      "ranking_profile": "https://schulen.de/schulen/graf-adolf-gymnasium-der-stadt-tecklenburg-10005/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5044,
+      "name": "Graf-Engelbert-Gymnasium Bochum",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/graf-engelbert-schule/",
+      "rank": 176,
+      "ranking_profile": "https://schulen.de/schulen/graf-engelbert-schule-bochum-10072/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3709,
+      "name": "Gymnasium Adolfinum Moers",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-adolfinum/",
+      "rank": 35,
+      "ranking_profile": "https://schulen.de/schulen/staedt-adolfinum-moers-10359/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 7581,
+      "name": "Gymnasium Am Turmhof Mechernich",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-am-turmhof-mechernich/",
+      "rank": 267,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-am-turmhof-mechernich-10157/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3715,
+      "name": "Gymnasium Antonianum Geseke",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-antonianum/",
+      "rank": 40,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-antonianum-geseke-10356/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5056,
+      "name": "Gymnasium Essen-Werden",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-essen-werden/",
+      "rank": 41,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-essen-werden-9953/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3926,
+      "name": "Gymnasium Fabritianum Krefeld",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-fabritianum/",
+      "rank": 343,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-fabritianum-krefeld-9903/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 5057,
+      "name": "Gymnasium Haus Overbach",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-haus-overbach/",
+      "rank": 90,
+      "ranking_profile": "https://schulen.de/schulen/priv-gymnasium-haus-overbach-juelich-9911/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5058,
+      "name": "Gymnasium Heißen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-heissen/",
+      "rank": 378,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-heissen-muelheim-an-der-ruhr-10061/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3941,
+      "name": "Gymnasium Horkesgath Krefeld",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-horkesgath/",
+      "rank": 145,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-horkesgath-krefeld-krefeld-10014/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5062,
+      "name": "Gymnasium Laurentianum Warendorf",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-laurentianum-warendorf/",
+      "rank": 2,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-laurentianum-warendorf-10332/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3732,
+      "name": "Gymnasium Leopoldinum",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-leopoldinum/",
+      "rank": 130,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-leopoldinum-detmold-10015/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3943,
+      "name": "Gymnasium Lohmar",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-lohmar/",
+      "rank": 62,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-lohmar-9872/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 8040,
+      "name": "Gymnasium Maria Königin Lennestadt",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-maria-koenigin-lennestadt/",
+      "rank": 477,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-maria-koenigin-lennestadt-10163/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 8281,
+      "name": "Gymnasium Mariengarden Borken-Bülo",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-mariengarden-borken-buelo/",
+      "rank": 519,
+      "ranking_profile": "https://schulen.de/schulen/priv-gymnasium-mariengarden-borken-10321/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3735,
+      "name": "Gymnasium Nepomucenum",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-nepomucenum/",
+      "rank": 28,
+      "ranking_profile": "https://schulen.de/schulen/staedtisches-ganztagsgymnasium-nepomucenum-coesfeld-coesfeld-10012/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3923,
+      "name": "Gymnasium Petrinum Recklinghausen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-petrinum/",
+      "rank": 83,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-petrinum-recklinghausen-10000/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3742,
+      "name": "Gymnasium Remigianum",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-remigianum/",
+      "rank": 8,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-remigianum-borken-10036/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3743,
+      "name": "Gymnasium Rheinkamp Europaschule Moers",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-rheinkamp-europaschule-moers/",
+      "rank": 115,
+      "ranking_profile": "https://schulen.de/schulen/rheinkamp-europaschule-moers-10084/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3927,
+      "name": "Gymnasium Schloß Neuhaus Paderborn",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-schloss-neuhaus/",
+      "rank": 16,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-schloss-neuhaus-paderborn-10028/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5069,
+      "name": "Gymnasium St. Xaver",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-st-xaver/",
+      "rank": 24,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-st-xaver-bad-driburg-9882/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5070,
+      "name": "Gymnasium Stift Keppel",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-stift-keppel/",
+      "rank": 131,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-stift-keppel-hilchenbach-10293/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5072,
+      "name": "Gymnasium Wolbeck",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-wolbeck/",
+      "rank": 92,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-wolbeck-der-stadt-muenster-10328/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5073,
+      "name": "Gymnasium Zum Altenforst",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-zum-altenforst/",
+      "rank": 178,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-zum-altenforst-troisdorf-10369/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5055,
+      "name": "Gymnasium der Stadt Frechen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-der-stadt-frechen/",
+      "rank": 128,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-der-stadt-frechen-10228/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3935,
+      "name": "Gymnasium der Stadt Lennestadt",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-der-stadt-lennestadt/",
+      "rank": 177,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-der-stadt-lennestadt-lennestadt-altenhundem-9766/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3955,
+      "name": "Gymnasium in den Filder Benden Moers",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-in-den-filder-benden/",
+      "rank": 841,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-in-den-filder-benden-moers-10364/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3924,
+      "name": "Hannah-Arendt-Gymnasium Lengerich",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hannah-arendt-gymnasium-lengerich/",
+      "rank": 13,
+      "ranking_profile": "https://schulen.de/schulen/hannah-arendt-gymnasium-lengerich-9803/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3754,
+      "name": "Hardtberg-Gymnasium",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hardtberg-gymnasium/",
+      "rank": 59,
+      "ranking_profile": "https://schulen.de/schulen/hardtberg-gymnasium-bonn-9930/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3940,
+      "name": "Heinrich-Heine-Gymnasium Bottrop",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/heinrich-heine-gymnasium-bottrop/",
+      "rank": 67,
+      "ranking_profile": "https://schulen.de/schulen/heinrich-heine-gymnasium-bottrop-9962/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3917,
+      "name": "Heisenberg-Gymnasium Dortmund",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/heisenberg-gymnasium-dortmund/",
+      "rank": 45,
+      "ranking_profile": "https://schulen.de/schulen/heisenberg-gymnasium-dortmund-10190/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3758,
+      "name": "Helmholtz-Gymnasium Essen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/helmholtz-gymnasium-essen/",
+      "rank": 159,
+      "ranking_profile": "https://schulen.de/schulen/helmholtz-gymnasium-essen-10226/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3757,
+      "name": "Helmholtz-Gymnasium-Bonn",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/helmholtz-gymnasium-bonn/",
+      "rank": 10,
+      "ranking_profile": "https://schulen.de/schulen/helmholtz-gymnasium-der-stadt-bonn-9991/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3760,
+      "name": "Hermann-Vöchting-Gymnasium",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hermann-voechting-gymnasium/",
+      "rank": 7,
+      "ranking_profile": "https://schulen.de/schulen/hermann-voechting-gymnasium-der-stadt-blomberg-10170/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3765,
+      "name": "Hildegardis-Schule Hagen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hildegardis-schule-hagen/",
+      "rank": 96,
+      "ranking_profile": "https://schulen.de/schulen/hildegardis-schule-hagen-9922/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3931,
+      "name": "Hittorf-Gymnasium Recklinghausen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hittorf-gymnasium-recklinghausen/",
+      "rank": 53,
+      "ranking_profile": "https://schulen.de/schulen/hittorf-schule-recklinghausen-10058/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3913,
+      "name": "Inda-Gymnasium Aachen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/inda-gymnasium/",
+      "rank": 46,
+      "ranking_profile": "https://schulen.de/schulen/inda-gymnasium-aachen-9927/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3774,
+      "name": "Johann-Gottfried-Herder-Gymnasium Köln",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/johann-gottfried-herder-gymnasium/",
+      "rank": 449,
+      "ranking_profile": "https://schulen.de/schulen/staedtisches-johann-gottfried-herder-gymnasium-koeln-10053/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 3782,
+      "name": "Josef-Albers-Gymnasium Bottrop",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/josef-albers-gymnasium/",
+      "rank": 37,
+      "ranking_profile": "https://schulen.de/schulen/staedt-josef-albers-gymnasium-bottrop-10366/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3920,
+      "name": "Joseph-Haydn-Gymnasium Senden",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/joseph-haydn-gymnasium-senden/",
+      "rank": 133,
+      "ranking_profile": "https://schulen.de/schulen/joseph-haydn-gymnasium-der-gemeinde-senden-9769/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3788,
+      "name": "Kaiser-Karls-Gymnasium Aachen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/kaiser-karls-gymnasium/",
+      "rank": 228,
+      "ranking_profile": "https://schulen.de/schulen/kaiser-karls-gymnasium-aachen-9801/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3789,
+      "name": "Kardinal-von-Galen-Gymnasium Hiltrup",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/kardinal-von-galen-gymnasium-hiltrup/",
+      "rank": 108,
+      "ranking_profile": "https://schulen.de/schulen/kardinal-von-galen-gymnasium-private-bischoefliche-schule-muenster-10371/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3960,
+      "name": "Kopernikus-Gymnasium Rheine",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/kopernikus-gymnasium-rheine/",
+      "rank": 272,
+      "ranking_profile": "https://schulen.de/schulen/staedt-kopernikus-gymnasium-rheine-10082/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3799,
+      "name": "Landrat-Lucas-Gymnasium Leverkusen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/landrat-lucas-gymnasium/",
+      "rank": 42,
+      "ranking_profile": "https://schulen.de/schulen/landrat-lucas-gymnasium-leverkusen-10184/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3985,
+      "name": "Lise-Meitner-Gymnasium Leverkusen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/lise-meitner-gymnasium-leverkusen/",
+      "rank": 93,
+      "ranking_profile": "https://schulen.de/schulen/lise-meitner-gymnasium-leverkusen-9784/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 7584,
+      "name": "Luisenschule Mülheim an der Ruhr",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/luisenschule-muelheim-an-der-ruhr/",
+      "rank": 110,
+      "ranking_profile": "https://schulen.de/schulen/luisenschule-muelheim-an-der-ruhr-9787/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3902,
+      "name": "Maria-Wächtler-Gymnasium Essen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/maria-waechtler-gymnasium/",
+      "rank": 54,
+      "ranking_profile": "https://schulen.de/schulen/maria-waechtler-gymnasium-essen-10225/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3947,
+      "name": "Marienschule Gymnasium Lippstadt",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/marienschule-lippstadt-gymnasium-und-aufbaugymnasium/",
+      "rank": 193,
+      "ranking_profile": "https://schulen.de/schulen/marienschule-lippstadt-10167/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3826,
+      "name": "Max-Planck-Gymnasium Duisburg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/max-planck-gymnasium-duisburg/",
+      "rank": 119,
+      "ranking_profile": "https://schulen.de/schulen/staedt-max-planck-gymnasium-duisburg-10348/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 8277,
+      "name": "Max-Planck-Gymnasium Düsseldorf",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/max-planck-gymnasium-duesseldorf/",
+      "rank": null,
+      "ranking_profile": "https://schulen.de/schulen/max-planck-gymnasium-duesseldorf-duesseldorf-10068/",
+      "status": "unverified_regional_rank",
+      "note": "schulen.de incorrectly assigns Max-Planck-Gymnasium Düsseldorf to Baden-Württemberg. No verified NRW rank; not assigned an invented position."
+    },
+    {
+      "mint_ec_id": 3951,
+      "name": "Max-Planck-Gymnasium Gelsenkirchen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/max-planck-gymnasium-gelsenkirchen/",
+      "rank": 274,
+      "ranking_profile": "https://schulen.de/schulen/staedt-max-planck-gymnasium-gelsenkirchen-9948/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3823,
+      "name": "Maximilian-Kolbe-Gymnasium Wegberg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/maximilian-kolbe-gymnasium-wegberg/",
+      "rank": 213,
+      "ranking_profile": "https://schulen.de/schulen/maximilian-kolbe-gymnasium-wegberg-10120/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3830,
+      "name": "Michael-Ende-Gymnasium Tönisvorst",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/michael-ende-gymnasium/",
+      "rank": 27,
+      "ranking_profile": "https://schulen.de/schulen/michael-ende-gymnasium-toenisvorst-9864/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3832,
+      "name": "Nicolaus-Cusanus-Gymnasium Bonn",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/nicolaus-cusanus-gymnasium/",
+      "rank": 151,
+      "ranking_profile": "https://schulen.de/schulen/nicolaus-cusanus-gymnasium-der-stadt-bonn-9951/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3836,
+      "name": "Otto-Hahn-Gymnasium Bergisch-Gladbach",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/otto-hahn-gymnasium-bergisch-gladbach/",
+      "rank": 446,
+      "ranking_profile": "https://schulen.de/schulen/otto-hahn-gymnasium-bergisch-gladbach-10232/",
+      "status": "outside_top_300"
+    },
+    {
+      "mint_ec_id": 8047,
+      "name": "Pascal-Gymnasium Grevenbroich",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/pascal-gymnasium-grevenbroich/",
+      "rank": 276,
+      "ranking_profile": "https://schulen.de/schulen/pascal-gymnasium-grevenbroich-10262/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3842,
+      "name": "Pascal-Gymnasium Münster",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/pascal-gymnasium/",
+      "rank": 74,
+      "ranking_profile": "https://schulen.de/schulen/pascal-gymnasium-muenster-10317/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3952,
+      "name": "Pelizaeus-Gymnasium Paderborn",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/pelizaeus-gymnasium/",
+      "rank": 136,
+      "ranking_profile": "https://schulen.de/schulen/pelizaeus-gymnasium-paderborn-9940/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3849,
+      "name": "Ratsgymnasium Münster",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ratsgymnasium-muenster/",
+      "rank": 49,
+      "ranking_profile": "https://schulen.de/schulen/staedt-ratsgymnasium-muenster-9835/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3851,
+      "name": "Reinhard und Max Mannesmann-Gymnasium Duisburg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/reinhard-und-max-mannesmann-gymnasium/",
+      "rank": 32,
+      "ranking_profile": "https://schulen.de/schulen/reinhard-und-max-mannesmann-gymnasium-duisburg-duisburg-9786/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3942,
+      "name": "Ritzefeld-Gymnasium Stolberg",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ritzefeld-gymnasium-stolberg/",
+      "rank": 68,
+      "ranking_profile": "https://schulen.de/schulen/staedt-ritzefeld-gymnasium-stolberg-rhld-10217/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3916,
+      "name": "Rudolph-Brandes-Gymnasium Bad Salzuflen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/rudolph-brandes-gymnasium/",
+      "rank": 69,
+      "ranking_profile": "https://schulen.de/schulen/rudolph-brandes-gymnasium-bad-salzuflen-10345/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3856,
+      "name": "Ruhrtal-Gymnasium Schwerte",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ruhrtal-gymnasium-schwerte/",
+      "rank": 60,
+      "ranking_profile": "https://schulen.de/schulen/staedt-ruhrtal-gymnasium-schwerte-10363/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3854,
+      "name": "Röntgen-Gymnasium Remscheid-Lennep",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/roentgen-gymnasium-remscheid-lennep/",
+      "rank": 38,
+      "ranking_profile": "https://schulen.de/schulen/roentgen-gymnasium-remscheid-10223/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3904,
+      "name": "Schulen der Brede Brakel",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/schulen-der-brede/",
+      "rank": 290,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-brede-brakel-9841/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3862,
+      "name": "St.-Anna-Schule Wuppertal",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/st-anna-schule/",
+      "rank": 158,
+      "ranking_profile": "https://schulen.de/schulen/erzbischoefliche-stanna-schule-wuppertal-9875/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3864,
+      "name": "St.-Antonius-Gymnasium Lüdinghausen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/st-antonius-gymnasium/",
+      "rank": 251,
+      "ranking_profile": "https://schulen.de/schulen/st-antonius-gymnasium-luedinghausen-10064/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3870,
+      "name": "Steinhagener Gymnasium",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/steinhagener-gymnasium/",
+      "rank": 252,
+      "ranking_profile": "https://schulen.de/schulen/steinhagener-gymnasium-steinhagen-9770/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3950,
+      "name": "Städtisches Gymnasium Augustinianum Greven",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-augustinianum-greven/",
+      "rank": 50,
+      "ranking_profile": "https://schulen.de/schulen/staedtisches-gymnasium-augustinianum-greven-greven-10104/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5053,
+      "name": "Städtisches Gymnasium Broich",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-broich/",
+      "rank": 86,
+      "ranking_profile": "https://schulen.de/schulen/staedt-gymnasium-broich-muelheim-an-der-ruhr-10214/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3918,
+      "name": "Städtisches Gymnasium Hattingen im Schulzentrum Holthausen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-hattingen-im-schulzentrum-holthausen/",
+      "rank": 82,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-holthausen-hattingen-10107/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3914,
+      "name": "Städtisches Gymnasium Herten",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-herten/",
+      "rank": 47,
+      "ranking_profile": "https://schulen.de/schulen/staedtisches-gymnasium-herten-9929/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3868,
+      "name": "Städtisches Gymnasium Leichlingen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-leichlingen/",
+      "rank": 165,
+      "ranking_profile": "https://schulen.de/schulen/staedt-gymnasium-leichlingen-leichlingen-rheinland-9775/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 8049,
+      "name": "Städtisches Gymnasium Rheinbach",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-gymnasium-rheinbach/",
+      "rank": 17,
+      "ranking_profile": "https://schulen.de/schulen/staedt-gymnasium-rheinbach-10074/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3905,
+      "name": "Städtisches Leibniz-Gymnasium Gelsenkirchen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-leibniz-gymnasium/",
+      "rank": 55,
+      "ranking_profile": "https://schulen.de/schulen/staedt-leibniz-gymnasium-gelsenkirchen-9839/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3869,
+      "name": "Städtisches Mathematisch-Naturwissenschaftliches Gymnasium Mönchengladbach",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/staedtisches-mathematisch-naturwissenschaftliches-gymnasium/",
+      "rank": 195,
+      "ranking_profile": "https://schulen.de/schulen/staedt-mathematisch-naturwissenschaftliches-gymnasium-moenchengladbach-10212/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3903,
+      "name": "Theodor-Heuss-Gymnasium Waltrop",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/theodor-heuss-gymnasium-waltrop/",
+      "rank": 102,
+      "ranking_profile": "https://schulen.de/schulen/theodor-heuss-gymnasium-waltrop-10306/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3880,
+      "name": "Werner-Heisenberg-Gymnasium Leverkusen",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/werner-heisenberg-gymnasium-leverkusen/",
+      "rank": 166,
+      "ranking_profile": "https://schulen.de/schulen/werner-heisenberg-gymnasium-leverkusen-10347/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3900,
+      "name": "Wilhelm-Dörpfeld-Gymnasium",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/wilhelm-doerpfeld-gymnasium/",
+      "rank": 167,
+      "ranking_profile": "https://schulen.de/schulen/wilhelm-doerpfeld-gymnasium-wuppertal-9868/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3886,
+      "name": "Wilhelm-Hittorf-Gymnasium Münster",
+      "region": "nrw",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/wilhelm-hittorf-gymnasium/",
+      "rank": 70,
+      "ranking_profile": "https://schulen.de/schulen/wilhelm-hittorf-gymnasium-muenster-10192/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 7606,
+      "name": "Ausonius-Gymnasium Kirchberg",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/ausonius-gymnasium/",
+      "rank": 54,
+      "ranking_profile": "https://schulen.de/schulen/ausonius-gymnasium-kirchberg-kirchberg-hunsrueck-10649/",
+      "status": "included",
+      "note": "Independent Gymnasium branch retained; not the Realschule or an integrated Gesamtschule.",
+      "school_form_source": "https://kgs-kirchberg.de/"
+    },
+    {
+      "mint_ec_id": 3690,
+      "name": "Gauß-Gymnasium Worms",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gauss-gymnasium/",
+      "rank": 60,
+      "ranking_profile": "https://schulen.de/schulen/gauss-gymnasium-worms-10667/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5052,
+      "name": "Gymnasium Birkenfeld",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-birkenfeld/",
+      "rank": 47,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-birkenfeld-10546/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3744,
+      "name": "Gymnasium Saarburg",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-saarburg/",
+      "rank": 17,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-saarburg-10571/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3841,
+      "name": "Gymnasium im PAMINA-Schulzentrum Herxheim",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/gymnasium-im-pamina-schulzentrum/",
+      "rank": 16,
+      "ranking_profile": "https://schulen.de/schulen/gymnasium-im-pamina-schulzentrum-herxheim-bei-landau-pfalz-10657/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 5042,
+      "name": "Görres-Gymnasium Koblenz",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/goerres-gymnasium/",
+      "rank": 51,
+      "ranking_profile": "https://schulen.de/schulen/goerres-gymnasium-koblenz-10577/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3906,
+      "name": "Herzog-Johann-Gymnasium Simmern",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/herzog-johann-gymnasium/",
+      "rank": 6,
+      "ranking_profile": "https://schulen.de/schulen/herzog-johann-gymnasium-simmern-hunsrueck-10529/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3767,
+      "name": "Hohenstaufen-Gymnasium",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/hohenstaufen-gymnasium/",
+      "rank": 22,
+      "ranking_profile": "https://schulen.de/schulen/hohenstaufen-gymnasium-kaiserslautern-10623/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3776,
+      "name": "Johannes-Gymnasium Lahnstein",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/johannes-gymnasium/",
+      "rank": 9,
+      "ranking_profile": "https://schulen.de/schulen/johannes-gymnasium-lahnstein-10596/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3795,
+      "name": "Kurfürst-Balduin-Gymnasium Münstermaifeld",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/kurfuerst-balduin-gymnasium/",
+      "rank": 28,
+      "ranking_profile": "https://schulen.de/schulen/kurfuerst-balduin-gymnasium-muenstermaifeld-10607/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3801,
+      "name": "Leininger-Gymnasium Grünstadt",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/leininger-gymnasium/",
+      "rank": 35,
+      "ranking_profile": "https://schulen.de/schulen/leininger-gymnasium-gruenstadt-10606/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3986,
+      "name": "Lise-Meitner-Gymnasium Maxdorf",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/lise-meitner-gymnasium-maxdorf/",
+      "rank": 80,
+      "ranking_profile": "https://schulen.de/schulen/lise-meitner-gymnasium-g8gts-maxdorf-10652/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3817,
+      "name": "Marion-Dönhoff-Gymnasium Lahnstein",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/marion-doenhoff-gymnasium-lahnstein/",
+      "rank": 99,
+      "ranking_profile": "https://schulen.de/schulen/marion-doenhoff-gymnasium-im-schulzentrum-lahnstein-10630/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 8045,
+      "name": "Martinus-Gymnasium Linz am Rhein",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/martinus-gymnasium-linz-am-rhein/",
+      "rank": 130,
+      "ranking_profile": "https://schulen.de/schulen/martinus-gymnasium-linz-am-rhein-10620/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3825,
+      "name": "Max-Planck-Gymnasium Trier",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/max-planck-gymnasium-trier/",
+      "rank": 11,
+      "ranking_profile": "https://schulen.de/schulen/max-planck-gymnasium-trier-10654/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3829,
+      "name": "Max-von-Laue-Gymnasium Koblenz",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/max-von-laue-gymnasium/",
+      "rank": 20,
+      "ranking_profile": "https://schulen.de/schulen/max-von-laue-gymnasium-koblenz-10656/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3839,
+      "name": "Otto-Schott-Gymnasium Mainz-Gonsenheim",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/otto-schott-gymnasium-mainz-gonsenheim/",
+      "rank": 12,
+      "ranking_profile": "https://schulen.de/schulen/otto-schott-gymnasium-mainz-gonsenheim-mainz-10536/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3845,
+      "name": "Peter-Joerres-Gymnasium Ahrweiler",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/peter-joerres-gymnasium-ahrweiler/",
+      "rank": 25,
+      "ranking_profile": "https://schulen.de/schulen/peter-joerres-gymnasium-bad-neuenahr-ahrweiler-stadt-10659/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3965,
+      "name": "Schönstätter Marienschule Vallendar",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/schoenstaetter-marienschule/",
+      "rank": 37,
+      "ranking_profile": "https://schulen.de/schulen/schoenstaetter-marienschule-marienschule-gymnasium-vallendar-10587/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3867,
+      "name": "St.-Willibrord-Gymnasium Bitburg",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/st-willibrord-gymnasium/",
+      "rank": 26,
+      "ranking_profile": "https://schulen.de/schulen/st-willibrord-gymnasium-bitburg-10551/",
+      "status": "included"
+    },
+    {
+      "mint_ec_id": 3881,
+      "name": "Werner-Heisenberg-Gymnasium Neuwied",
+      "region": "rp",
+      "mint_ec_url": "https://netzwerkkarte.mint-ec.de/akteur/werner-heisenberg-gymnasium-neuwied/",
+      "rank": 14,
+      "ranking_profile": "https://schulen.de/schulen/werner-heisenberg-gymnasium-neuwied-10558/",
+      "status": "included"
+    }
+  ]
+}
